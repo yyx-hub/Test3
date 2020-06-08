@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bookstore.client.user.dao.IUserDao">
+    <!--注册用户-->
+    <insert id="insertUser">
+        insert into user (username,password,email,gender,telephone,introduce,activeCode)
+        values (#{username},#{password},#{email},#{gender},#{telephone},#{introduce},#{activeCode})
+    </insert>
+<!--激活就是把状态0修改为1-->
+    <update id="activeUser">
+        update user set state = 1
+        where activeCode = #{activeCode}
+    </update>
+    <!--查询邮箱是否已被使用-->
+    <select id="selectEmail" resultType="User">
+        select * from user where email = #{email}
+    </select>
+    <!--查询会员名是否被占用-->
+    <select id="selectUsername" resultType="User">
+        select * from user where username = #{username}
+    </select>
+    <!--查询登录用户-->
+    <select id="selectUserByLogin" resultType="User">
+        select * from user where username = #{username} and password = #{password}
+    </select>
+    <!--修改用户信息-->
+    <update id="updateUser">
+        update user set password = #{password},gender = #{gender},telephone = #{telephone} where id = #{id}
+    </update>
+    <!--查找当前登录用户的订单-->
+    <select id="selectUserById" resultType="User">
+        select * from user where id = #{user_id}
+    </select>
+    <resultMap id="orderMap" type="Order">
+        <id column="id" property="id"/>
+        <association property="user"
+                     javaType="User"
+                     select="selectUserById"
+                     column="user_id"/>
+    </resultMap>
+    <select id="selectOrderByUser" resultMap="orderMap">
+        select * from orders where  user_id = #{id}
+    </select>
+
+    <!--查询详细信息-->
+    <select id="selectOrderById" resultMap="orderMap">
+        select * from orders where id = #{order_id}
+    </select>
+    <select id="selectProductById" resultType="Product">
+        select * from products where id = #{product_id}
+    </select>
+    <resultMap id="orderItemMap" type="OrderItem">
+        <association property="order"
+                     javaType="Order"
+                     select="selectOrderById"
+                     column="order_id"/>
+        <association property="product"
+                     javaType="Product"
+                     select="selectProductById"
+                     column="product_id"/>
+    </resultMap>
+    <select id="selectOrderItemById" resultMap="orderItemMap">
+        select * from orderitem where order_id = #{id}
+    </select>
+
+    <!--删除库存-->
+    <delete id="deleteOrderById">
+        delete from orders where id =#{id}
+    </delete>
+    <delete id="deleteOrderItemById">
+        delete from orderitem where order_id = #{id}
+    </delete>
+    <update id="updateProductnum">
+        update products set pnum = pnum + #{buynum} where id = #{product.id}
+    </update>
+</mapper>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bookstore.client.products.dao.IProductDao">
+<!--查询类别-->
+    <select id="selectProductByCategory" resultType="Product">
+        select * from products
+        <where>
+            <if test="category != null and category !=''">
+                category = #{category}
+            </if>
+        </where>
+        limit #{pageModel.firstLimitParam},#{pageModel.pageSize}
+    </select>
+<!--查询类别数目-->
+    <select id="selectProductCountByCategory" resultType="int">
+        select count(*) from products
+        <where>
+            <if test="category != null and category !=''">
+                category = #{category}
+            </if>
+        </where>
+    </select>
+<!--按名称查询-->
+    <select id="selectProductByName" resultType="Product">
+        select * from products
+<where>
+    <if test="name != null and name !='' and name !='请输入书名'">
+        name like '%' #{name} '%'
+    </if>
+</where>
+        limit #{pageModel.firstLimitParam},#{pageModel.pageSize}
+    </select>
+  <!--按名称查询后目录下的数目-->
+    <select id="selectProductByNameCount" resultType="int">
+        select count(*) from products
+<where>
+    <if test="name != null and name !='' and name !='请输入书名'">
+        name like 'like' #{name} '%'
+    </if>
+</where>
+    </select>
+    <!--书本详细信息显示-->
+    <select id="selectProductById" resultType="Product">
+        select * from products where id =#{id}
+    </select>
+
+    <!--查询-->
+    <select id="selectNoticeRecent" resultType="Notice">
+        select * from notice order by n_time desc limit 0,1
+    </select>
+    <!--查询本周热卖-->
+    <select id="selectWeekHotProduct" resultType="Product">
+        select products.id,products.name,products.imgurl,products.price,SUM(orderitem.buynum) totalnum
+        from products,orders,orderitem
+        where orders.paystate=1
+        and orders.ordertime > DATE_SUB(NOW(),INTERVAL 7 DAY)
+        and orders.id = orderitem.order_id
+        and products.id = orderitem.product_id
+        GROUP BY products.id
+        ORDER BY totalnum DESC
+        limit 0,2
+    </select>
+</mapper>

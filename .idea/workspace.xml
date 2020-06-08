@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="bookstore:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14e56e6e-7632-4f21-8f03-dbcad940dedc" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aF263oakgJUOQTugSyj518zcAK" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/bookstore/admin/notices/dao" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bookstore.commons.beans" />
+      <recent name="com.bookstore.admin.products.dao" />
+      <recent name="com.bookstore.admin.products.service" />
+      <recent name="com.bookstore.admin.login.dao" />
+      <recent name="com.bookstore.admin.login.services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\11658\Desktop\Work\SSM框架代码（Spring+SpringMVC+Mybatis)\SSM整合基础代码\网上书城系统\bookstore\src\main\java\com\bookstore\admin\notices\dao" />
+      <recent name="C:\Users\11658\Desktop\Work\SSM框架代码（Spring+SpringMVC+Mybatis)\SSM整合基础代码\网上书城系统\bookstore\src\main\java\com\bookstore\admin\notices\service" />
+      <recent name="C:\Users\11658\Desktop\Work\SSM框架代码（Spring+SpringMVC+Mybatis)\SSM整合基础代码\网上书城系统\bookstore\src\main\java\com\bookstore\admin\notices\handler" />
+      <recent name="C:\Users\11658\Desktop\Work\SSM框架代码（Spring+SpringMVC+Mybatis)\SSM整合基础代码\网上书城系统\bookstore\src\main\webapp\admin\images" />
+      <recent name="C:\Users\11658\Desktop\Work\SSM框架代码（Spring+SpringMVC+Mybatis)\SSM整合基础代码\网上书城系统\bookstore\src\main\webapp\admin\images\tree" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ssm" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="ssm" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/bookstore_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="bookstore:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/bookstore_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_bookstore" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52018" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="bookstore:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14e56e6e-7632-4f21-8f03-dbcad940dedc" name="Default Changelist" comment="" />
+      <created>1586316842417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586316842417</updated>
+      <workItem from="1586316843802" duration="9679000" />
+      <workItem from="1586397402721" duration="4735000" />
+      <workItem from="1586487328708" duration="1693000" />
+      <workItem from="1586767554374" duration="2273000" />
+      <workItem from="1586830630676" duration="4068000" />
+      <workItem from="1586868892547" duration="3000" />
+      <workItem from="1586917134630" duration="602000" />
+      <workItem from="1587044594936" duration="1554000" />
+      <workItem from="1587347060147" duration="3732000" />
+      <workItem from="1587438680528" duration="4417000" />
+      <workItem from="1587630060618" duration="3186000" />
+      <workItem from="1587718314800" duration="7622000" />
+      <workItem from="1587780140000" duration="4290000" />
+      <workItem from="1587870249873" duration="2946000" />
+      <workItem from="1587985875757" duration="3289000" />
+      <workItem from="1588038183612" duration="6094000" />
+      <workItem from="1588061417673" duration="3574000" />
+      <workItem from="1588320919501" duration="3528000" />
+      <workItem from="1588386720540" duration="4159000" />
+      <workItem from="1588497713381" duration="3661000" />
+      <workItem from="1588556806429" duration="3856000" />
+      <workItem from="1588823390697" duration="4435000" />
+      <workItem from="1588906717689" duration="4578000" />
+      <workItem from="1589165563144" duration="3883000" />
+      <workItem from="1589334319379" duration="3968000" />
+      <workItem from="1589515796505" duration="1921000" />
+      <workItem from="1589526815585" duration="1113000" />
+      <workItem from="1589534963157" duration="764000" />
+      <workItem from="1589536146040" duration="1365000" />
+      <workItem from="1589537597335" duration="323000" />
+      <workItem from="1589539468211" duration="371000" />
+      <workItem from="1589547306266" duration="2261000" />
+      <workItem from="1589621608370" duration="1992000" />
+      <workItem from="1589791620319" duration="4322000" />
+      <workItem from="1589855894778" duration="2051000" />
+      <workItem from="1590228165184" duration="600000" />
+      <workItem from="1590228783093" duration="321000" />
+      <workItem from="1590374105347" duration="1331000" />
+      <workItem from="1590395050205" duration="1795000" />
+      <workItem from="1590461344204" duration="3879000" />
+      <workItem from="1590479322073" duration="2783000" />
+      <workItem from="1590545016436" duration="147000" />
+      <workItem from="1590547762856" duration="577000" />
+      <workItem from="1590549892565" duration="3494000" />
+      <workItem from="1590554183478" duration="1782000" />
+      <workItem from="1590571927085" duration="9573000" />
+      <workItem from="1590648504609" duration="5666000" />
+      <workItem from="1590654215388" duration="1571000" />
+      <workItem from="1590655805945" duration="1323000" />
+      <workItem from="1590669147209" duration="2227000" />
+      <workItem from="1590715008449" duration="5885000" />
+      <workItem from="1590724975229" duration="1706000" />
+      <workItem from="1590728594502" duration="3683000" />
+      <workItem from="1590733050045" duration="18000" />
+      <workItem from="1590733319817" duration="27000" />
+      <workItem from="1590733873311" duration="23000" />
+      <workItem from="1590977725974" duration="1472000" />
+      <workItem from="1591000112460" duration="1690000" />
+      <workItem from="1591147442065" duration="4673000" />
+      <workItem from="1591159281508" duration="986000" />
+      <workItem from="1591235841031" duration="79000" />
+      <workItem from="1591325490403" duration="36000" />
+      <workItem from="1591332473576" duration="2907000" />
+      <workItem from="1591343930476" duration="271000" />
+      <workItem from="1591582176881" duration="73000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
